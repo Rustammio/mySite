@@ -32,7 +32,7 @@
         <span id="sec" class="arrow" style="--cir:hh;"><i></i></span>
         <span id="min" class="arrow arrow2" style="--cir:mm;"><i></i></span>
         <span id="hr" class="arrow arrow3" style="--cir:ss;"><i></i></span>
-        <span  class="circle"></span>
+        <span class="circle"></span>
         <div style="--i:1;"><span>1</span></div>
         <div style="--i:2;"><span>2</span></div>
         <div style="--i:3;"><span>3</span></div>
@@ -49,6 +49,7 @@
 </header>
 <main>
     <section class="stack">
+        <div class="stack-wrapper">
         <div class="stack-container">
             <h3 class="stack-container-heading">Hey, my name is Rustam</h3>
             <p class="stack-container-disc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta dignissimos
@@ -83,11 +84,21 @@
                 <span style="--i:12"><img src="./dist/img/github-453.svg" alt=""></span>
             </div>
         </div>
+        </div>
     </section>
     <section class="experience">
         <div><h3 class="stack-container-heading experience-heading">Experience</h3></div>
         <div class="experience-container">
             <div class="experience-container-hairhouse">
+                <svg width="197" height="36" viewBox="0 0 197 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="text" fill-rule="evenodd" clip-rule="evenodd"
+                          d="M40.308 1.39998H45.488V21H40.308V13.524H33.028V21H27.848V1.39998H33.028V8.90398H40.308V1.39998ZM52.684 21H47.364L55.064 1.39998H60.664L68.364 21H63.044L61.924 17.92H53.804L52.684 21ZM57.36 8.06398L55.344 13.72H60.384L58.368 8.06398C58.2 7.58798 58.032 7.11198 57.864 6.07598C57.696 7.11198 57.528 7.58798 57.36 8.06398ZM70.24 1.39998H75.42V21H70.24V1.39998ZM84.296 21H79.116V1.39998H87.376C91.352 1.39998 95.412 2.82798 95.412 8.00798C95.412 11.256 93.816 13.02 91.66 13.888L97.064 21H91.212L86.536 14.616H84.296V21ZM84.296 5.87998V10.416H87.6C89.084 10.416 90.092 9.65998 90.092 8.14798C90.092 6.63598 89.084 5.87998 87.6 5.87998H84.296ZM111.484 1.39998H116.664V21H111.484V13.524H104.204V21H99.024V1.39998H104.204V8.90398H111.484V1.39998ZM119.38 11.2C119.38 5.73998 122.88 0.97998 129.88 0.97998C136.88 0.97998 140.38 5.73998 140.38 11.2C140.38 16.66 136.88 21.42 129.88 21.42C122.88 21.42 119.38 16.66 119.38 11.2ZM135.06 11.2C135.06 8.06398 133.268 5.73998 129.88 5.73998C126.492 5.73998 124.7 8.06398 124.7 11.2C124.7 14.336 126.492 16.66 129.88 16.66C133.268 16.66 135.06 14.336 135.06 11.2ZM155.36 1.39998H160.54V13.524C160.54 19.432 156.06 21.42 151.72 21.42C147.38 21.42 142.9 19.432 142.9 13.524V1.39998H148.08V13.244C148.08 15.876 149.508 16.8 151.72 16.8C153.932 16.8 155.36 15.876 155.36 13.244V1.39998ZM163.34 6.74798C163.34 2.82798 166.7 0.97998 170.732 0.97998C173.168 0.97998 175.604 1.56798 177.312 2.54798V7.30798C175.632 6.04798 173.42 5.43198 171.152 5.45998C169.248 5.48798 168.66 5.99198 168.66 6.71998C168.66 9.26798 178.852 8.48398 178.852 15.428C178.852 20.076 175.296 21.42 171.012 21.42C168.184 21.42 165.552 20.776 163.48 19.628V14.728C165.804 16.324 168.38 16.94 170.62 16.94C172.664 16.94 173.532 16.604 173.532 15.624C173.532 12.796 163.34 13.748 163.34 6.74798ZM181.428 1.39998H195.54V5.87998H186.608V8.87598H194.7V13.328H186.608V16.52H195.708V21H181.428V1.39998Z"
+                          fill="black"></path>
+                    <path class="line" d="M1.49936 28H196" stroke="black" stroke-width="2"
+                          stroke-linecap="square"></path>
+                    <path class="line" d="M1.49936 34H196" stroke="black" stroke-width="2"
+                          stroke-linecap="square"></path>
+                </svg>
                 <h4 class="experience-container-hairhouse-heading">hairhouse</h4>
                 <p class="experience-container-hairhouse-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     A dolorum exercitationem molestias nobis,
@@ -97,25 +108,57 @@
                     voluptates. Accusantium consectetur consequuntur cupiditate dicta dolorem ea, eaque eligendi facilis
                     hic illum ipsa libero minima necessitatibus nobis possimus quas quasi qui sed sit tempore temporibus
                     voluptatem voluptatibus? Corporis culpa dolor, doloremque et expedita nemo quod tenetur. Alias
-                    aliquam cupiditate dicta non perspiciatis. Est odit perferendis quae quidem ullam.</p></div>
-                <div class="experience-container-backstage">
-                    <h4 class="experience-container-backstage-heading">Backstage</h4>
-                    <p class="experience-container-backstage-text">Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. A, consequatur, cum dolor eaque earum esse
-                        harum hic ipsa itaque non officiis quia reiciendis repudiandae tempore tenetur. Ab dicta et
-                        perspiciatis sed veniam! A aliquid architecto blanditiis, cupiditate delectus distinctio illum,
-                        ipsum laborum odio omnis perferendis quo reiciendis repellat voluptates voluptatibus?</p>
-                </div>
-                <div class="experience-container-dan_IT">
-                    <h4 class="experience-container-dan_IT-heading">Dan IT</h4>
-                    <p class="experience-container-dan_IT-text">Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. A amet aspernatur atque culpa cum
-                        dignissimos dolore dolorem doloremque eaque eum exercitationem fugit illum iure, labore neque
-                        odio
-                        quisquam quos rem repellat repellendus sint totam ut. Ad autem corporis cupiditate dicta dolor
-                        dolores, enim explicabo ipsam laboriosam non quae rem tenetur.</p></div>
+                    aliquam cupiditate dicta non perspiciatis. Est odit perferendis quae quidem ullam.</p>
             </div>
+            <div class="experience-container-backstage">
+                <img src="dist/img/Logo-Backstage-01.png"  alt="Backstage logo">
+                <h4 class="experience-container-backstage-heading">Backstage</h4>
+                <p class="experience-container-backstage-text">Lorem ipsum dolor sit amet, consectetur adipisicing
+                    elit. A, consequatur, cum dolor eaque earum esse
+                    harum hic ipsa itaque non officiis quia reiciendis repudiandae tempore tenetur. Ab dicta et
+                    perspiciatis sed veniam! A aliquid architecto blanditiis, cupiditate delectus distinctio illum,
+                    ipsum laborum odio omnis perferendis quo reiciendis repellat voluptates voluptatibus?</p>
+            </div>
+            <div class="experience-container-dan_IT">
+                <img src="./dist/img/dan-logo.svg" alt="dan_IT logo">
+                <h4 class="experience-container-dan_IT-heading">Dan IT</h4>
+                <p class="experience-container-dan_IT-text">Lorem ipsum dolor sit amet, consectetur adipisicing
+                    elit. A amet aspernatur atque culpa cum
+                    dignissimos dolore dolorem doloremque eaque eum exercitationem fugit illum iure, labore neque
+                    odio
+                    quisquam quos rem repellat repellendus sint totam ut. Ad autem corporis cupiditate dicta dolor
+                    dolores, enim explicabo ipsam laboriosam non quae rem tenetur.</p>
+            </div>
+        </div>
 
+    </section>
+    <section class="calc">
+
+        <div class="calculator">
+            <div class="calculator-display"></div>
+            <div class="calculator-keyboard">
+                <div class="calculator-keyboard-button">Ac</div>
+                <div class="calculator-keyboard-button">/</div>
+                <div class="calculator-keyboard-button">*</div>
+                <div class="calculator-keyboard-button">&larr;</div>
+                <div class="calculator-keyboard-button">7</div>
+                <div class="calculator-keyboard-button">8</div>
+                <div class="calculator-keyboard-button">9</div>
+                <div class="calculator-keyboard-button">-</div>
+                <div class="calculator-keyboard-button">4</div>
+                <div class="calculator-keyboard-button">5</div>
+                <div class="calculator-keyboard-button">6</div>
+                <div class="calculator-keyboard-button">+</div>
+                <div class="calculator-keyboard-button">1</div>
+                <div class="calculator-keyboard-button">2</div>
+                <div class="calculator-keyboard-button">3</div>
+                <div class="calculator-keyboard-button">.</div>
+                <div class="calculator-keyboard-button">(</div>
+                <div class="calculator-keyboard-button">0</div>
+                <div class="calculator-keyboard-button">)</div>
+                <div id="result" class="calculator-keyboard-button">=</div>
+            </div>
+        </div>
     </section>
 
 </main>

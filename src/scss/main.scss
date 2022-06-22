@@ -1,10 +1,14 @@
 @import "normalize";
 @import "variable";
 
+html {
+  font-family: $main-font;
+}
+
 .heading {
   margin: 0;
   width: 100%;
-  height: 950px;
+  height: 100vh;
   position: relative;
 
   &::before {
@@ -154,7 +158,12 @@
   background-attachment: fixed;
   padding-top: 30px;
   background-color: #656565;
-  min-height: 950px;
+  height: 100vh;
+
+  &-wrapper {
+    max-width: 90%;
+    margin: 10vh auto;
+  }
 
   &-container {
     float: right;
@@ -219,31 +228,70 @@
 }
 
 .experience {
-  &-heading{
+  background-color: #E5E5E5;
+  height: 100vh;
+  min-height: 950px;
+
+  &-heading {
     text-align: center;
+    margin-top: 0;
+    padding-top: 40px;
+
   }
-  &-cotainer{
-    &hairhouse{
-      &-heading{
+
+  &-container {
+    position: relative;
+    width: 75%;
+    margin: 0 auto;
+
+    &-hairhouse {
+      //position: absolute;
+      top: 20%;
+      width: 30%;
+
+      &-heading {
 
       }
-      &-text{
+
+      &-text {
 
       }
     }
-    &-backstage{
-      &-heading{
+
+    &-backstage {
+      position: absolute;
+      right: 0;
+      width: 30%;
+      top: 30%;
+
+      img {
+        object-fit: contain;
+        width: 50%;
+      }
+
+      &-heading {
 
       }
-      &-text{
+
+      &-text {
 
       }
     }
-    &-dan_IT{
-      &-heading{
+
+    &-dan_IT {
+      width: 30%;
+      position: absolute;
+      top: 120%;
+
+      img {
+        width: 50%;
+      }
+
+      &-heading {
 
       }
-      &-text{
+
+      &-text {
 
       }
     }
@@ -263,7 +311,8 @@
   justify-content: center;
   align-items: center;
 }
-.clock span{
+
+.clock span {
 
 }
 
@@ -279,15 +328,16 @@
   display: inline-block;
   transform: rotate(calc(-30deg * var(--i)));
 }
-.clock::before{
+
+.clock::before {
   content: '';
   display: block;
-  width:8px;
+  width: 8px;
   height: 8px;
   /*border:1px solid white;*/
   position: absolute;
   top: 50%;
-  left:50%;
+  left: 50%;
   transform: translate(-50%, -50%);
   border-radius: 50%;
   background-color: white;
@@ -297,8 +347,8 @@
 .arrow {
   position: absolute;
 
-  width:65%;
-  height:70%;
+  width: 65%;
+  height: 70%;
   /*border: 1px solid white;*/
   border-radius: 50%;
   display: flex;
@@ -307,26 +357,105 @@
 }
 
 .arrow2 {
-  width:60%;
-  height:65%;
+  width: 60%;
+  height: 65%;
 }
 
 .arrow3 {
-  width:50%;
-  height:45%;
+  width: 50%;
+  height: 45%;
 }
-.circle{
+
+.circle {
   height: 93%;
   width: 93%;
   border: 1px solid rgba(255, 255, 255, 0.37);
   border-radius: 50%;
 }
-.arrow i{
+
+.arrow i {
   position: absolute;
-  width: 3px;
+  width: 2px;
   height: 50%;
   background-color: white;
   /*transform: translateX(50%);*/
   border-radius: 50%;
 }
 
+.calc {
+  margin: 0;
+  width: 80%;
+  height: 100vh;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../../dist/img/4K-Programming-Wallpaper-HD.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100vw;
+    height: 100%;
+    z-index: -1;
+    filter: /*grayscale(20%)*/
+            opacity(1) brightness(50%) contrast(126%);
+    -webkit-filter: grayscale(50%) opacity(1) brightness(20%) contrast(126%);
+
+
+  }
+}
+.calculator {
+  width: 400px;
+  /*border: 1px solid black;*/
+  height: 60vh;
+  align-items: center;
+  //margin: 10vh auto;
+  filter: none;
+  position: absolute;
+  top:50%;
+  right: 0;
+  transform: translate(0, -50%);
+}
+
+.calculator-display {
+
+  height: 15%;
+  width: 95%;
+  border: 1px solid rgba(255, 255, 255, 0.66);
+  border-radius: 20px;
+  margin: auto;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  font-size: 40px;
+
+
+}
+
+.calculator-keyboard {
+  width: 95%;
+  height: 80%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin: 20px auto;
+  grid-gap: 3%;
+
+
+}
+
+.calculator-keyboard-button {
+  text-transform: uppercase;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.66);
+  border-radius: 20%;
+  font-size: 25px;
+  cursor: pointer;
+}
