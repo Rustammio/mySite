@@ -407,6 +407,27 @@ html {
 
 
   }
+  &-joke{
+    &-text{
+      color: #fff;
+      text-align: center;
+      margin-top: 0;
+      padding-top: 40px;
+      font-weight: 700;
+      font-size: 33px;
+    }
+    &-disc{
+      color: #fff;
+      margin-top: 0;
+      padding-top: 40px;
+      font-weight: 700;
+      font-size: 33px;
+      width: 40%;
+      position: absolute;
+      top: 40%;
+      left: 20%;
+    }
+  }
 }
 .calculator {
   width: 400px;
